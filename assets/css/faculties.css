@@ -1,0 +1,228 @@
+
+/*==============================================================
+= Custom Faculty-page css
+= by codejow
+=Table of Contents:
+=   1- Faculties general css styles
+=   2- Process
+=   3-  Overview
+=   4- Ambination
+===============================================================*/
+/*
+
+Faculty General CSS styles
+------------------------------------------------------------------*/
+
+@import url("http://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+@import url("http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css");
+*, *:before, *:after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+}
+
+body {
+  font: 14px/1 'Open Sans', sans-serif;
+  color: #555;
+  background: #eee;
+}
+
+h1 {
+  font-weight: 400;
+  text-align: center;
+}
+
+p {
+  margin: 0 0 20px;
+  line-height: 1.5;
+}
+
+
+@media screen and(max-width: 768px)
+{
+.text-center{
+  margin-left: -20% !important;
+  margin-right: -20% !important;
+}
+
+}
+
+/*Process
+======================================================*/
+
+
+.text h2{
+    font-weight: 400;
+    color: black;
+}
+.container-fluid .text,.boxes{
+  text-align: center;
+}
+.box
+{
+  padding-left:20px;
+
+}
+.boxes{
+  margin-bottom: 90px;
+
+}
+
+.icon-size{
+  font-size: 5em;
+}
+.fa-heart{
+  color: red;
+}
+.description{
+  margin-right: 20%;
+  margin-left: 20%;
+  font-weight: 600;
+  padding-bottom: 20px;
+  color: #4a4a4a;
+}
+
+@media screen and (max-width: 650px) {
+  label {
+    font-size: 0;
+  }
+
+  label:before {
+    margin: 0;
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 400px) {
+  label {
+    padding: 15px;
+  }
+}
+
+
+/*Overview Css
+-----------------------------------------------------------------*/
+
+.overview{
+
+  width: 100%;
+  font-weight: 200;
+  padding: 20px 30% 20px 30%;
+
+  text-align: center;
+  color: #4a4a4a !important;
+}
+.overview h3{
+  font-weight: 400;
+color: black;
+}
+.container .boxes{
+  margin-bottom: 50px;
+}
+.dep-img{
+  width: 100%;
+  height: 250px;
+  padding-bottom: 5px;
+}
+.btn-simple:hover{
+background: #3f51b5 !important;
+color: white !important;
+}
+
+.btn-simple{
+color: black !important;
+float: left;
+box-shadow:0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 6px 10px 0 rgba(0, 0, 0, 0.19) !important;
+margin:0 30% 0 30%;
+}
+
+
+/*Degrees
+=================================================================*/
+.container-black{
+  background: url('../img/faculties/banner-bg2.jpg');
+  padding: 50px 30px;
+  height: 400px;
+}
+@media screen and (max-width: 768px){
+  .container-black{
+  background: url('../img/faculties/banner-bg2.jpg');
+  padding: 50px 30px;
+  height: 100%;
+}
+.container-black-2{
+  background: url('../img/banner-bg2.jpg');
+  padding: 100px 30px;
+  height: 100% !important;
+  text-overflow: hidden;
+  overflow: hidden;
+}
+
+.boxes button{
+  margin-bottom: 5em;
+
+}
+}
+.container-black p {
+  text-align: center;
+  font-weight: 400;
+    color: white;
+    font-size: 19px;
+    padding: 0 10% 0 10%;
+}
+
+.container-black h2{
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+.degree{
+  padding: 20px;
+  text-overflow: hidden;
+  overflow: hidden;
+}
+
+/*Aimination
+=========================================================*/
+.container-black-2{
+  background: url('../img/banner-bg2.jpg');
+  padding: 100px 30px;
+  height: 400px;
+}
+.container-black-2 p {
+  text-align: center;
+  font-weight: 400;
+    color: white;
+    font-size: 19px;
+    padding: 0 10% 0 10%;
+}
+
+.container-black-2 h2{
+  text-align: center;
+  color: white;
+  font-weight: 600;
+  font-family: sans-serif;
+}
+
+
+.btn-social{
+  background: #3f51b5 !important;
+}
+
+
+
+
+
+
+
+.btn-social{
+  background: #3f51b5;
+}
+
+
+
+

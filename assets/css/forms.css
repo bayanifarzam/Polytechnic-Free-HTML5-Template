@@ -1,0 +1,312 @@
+
+
+
+/* ==========================================================================
+   Custom Styles for Contact and Registration forms
+   1- Contact page
+   2- register page
+   ========================================================================== */
+
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,600,400italic);
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea,
+#contact button[type="submit"] {
+  font: 400 12px/16px "Roboto", Helvetica, Arial, sans-serif;
+}
+
+#contact {
+  background: #fff;
+  padding: 25px;
+
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+#contact h3 {
+  display: block;
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+#contact h4 {
+  margin: 5px 0 15px;
+  display: block;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+fieldset {
+  border: medium none !important;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+#contact input[type="text"],
+#contact input[type="email"],
+#contact input[type="tel"],
+#contact input[type="url"],
+#contact textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+#contact input[type="text"]:hover,
+#contact input[type="email"]:hover,
+#contact input[type="tel"]:hover,
+#contact input[type="url"]:hover,
+#contact textarea:hover {
+  -webkit-transition: border-color 0.3s ease-in-out;
+  -moz-transition: border-color 0.3s ease-in-out;
+  transition: border-color 0.3s ease-in-out;
+  border: 1px solid #aaa;
+}
+
+#contact textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+#contact button[type="submit"] {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background:#3f51b5;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+#contact button[type="submit"]:hover {
+  background: #43A047;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+#contact button[type="submit"]:active {
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+
+#contact input:focus,
+#contact textarea:focus {
+  outline: 0;
+  border: 1px solid #aaa;
+}
+
+::-webkit-input-placeholder {
+  color: #888;
+}
+
+:-moz-placeholder {
+  color: #888;
+}
+
+::-moz-placeholder {
+  color: #888;
+}
+
+:-ms-input-placeholder {
+  color: #888;
+}
+
+.container .heading{
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+
+
+
+.section-contactboxes {
+  margin-top: 3rem;
+  padding: 10px;
+}
+
+a {
+  color: #f49263;
+  text-decoration: none;
+}
+
+.contact-box-cntr:first-child {
+  margin-top: 0;
+}
+
+.contact-box {
+  border: 2px solid transparent;
+  overflow: hidden;
+  padding: 1rem 0;
+  position: relative;
+  text-align: center;
+}
+.contact-box:before {
+  border-radius: 50%;
+  content: "";
+  height: 100px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  will-change: transform, opacity;
+  z-index: 0;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -moz-transition-property: -moz-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  -webkit-transition-property: -webkit-transform, opacity;
+  transition-property: transform, opacity;
+}
+.contact-box:hover {
+  cursor: pointer;
+}
+.contact-box:hover:before {
+  opacity: 1;
+  -moz-transform: scale3d(3.4, 3.4, 1);
+  -ms-transform: scale3d(3.4, 3.4, 1);
+  -webkit-transform: scale3d(3.4, 3.4, 1);
+  transform: scale3d(3.4, 3.4, 1);
+}
+.contact-box:hover i, .contact-box:hover h4, .contact-box:hover p, .contact-box:hover a {
+  position: relative;
+  z-index: 2;
+  -moz-transition-property: color;
+  -o-transition-property: color;
+  -webkit-transition-property: color;
+  transition-property: color;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+
+.contact-box__title {
+  margin: 0.375rem 0 0 0;
+  font-size: 2rem;
+}
+
+.contact-box__info {
+  margin: 0;
+}
+
+.contact-box__icon {
+  font-size: 2.5rem;
+}
+
+.contact-box--teal {
+  color: #3f51b5;
+  border-color: #3f51b5;
+}
+.contact-box--teal .contact-box__title {
+  color: inherit;
+}
+.contact-box--teal:before {
+  background-color: #3f51b5;
+  border: 1px solid #3f51b5;
+}
+.contact-box--teal:hover {
+  color: white;
+}
+.contact-box--teal:hover a {
+  color: white;
+}
+
+
+.ico {
+  line-height: 0;
+}
+.ico:before {
+  display: inline-block;
+  font-family: "Icons";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.ico-envelope:before {
+  content: "";
+}
+
+.ico-phone:before {
+  content: "";
+}
+
+.ico-clock:before {
+  content: "";
+}
+
+
+
+/*
+2. register page
+===================================================*/
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,600);
+@import url(http://fonts.googleapis.com/css?family=Petit+Formal+Script);
+
+body .content-wrap {
+  font-family: "Raleway", sans-serif;
+  max-width: 100%;
+}
+
+.callout-list .line {
+  border-bottom: 1px solid #e2e3e4;
+
+}
+
+.vertical ol {
+  counter-reset: li;
+  list-style: none;
+  margin-top: 1.875em;
+  padding: 0;
+  overflow: hidden;
+}
+.vertical ol li {
+  margin-bottom: 2.5em;
+  position: relative;
+  padding-left: 4.4em;
+  padding-top: .7em;
+  display: block;
+  font-weight: 400;
+}
+.vertical ol li:before {
+  content: counter(li);
+  counter-increment: li;
+  position: absolute;
+  margin-top: 2%;
+  font-size: 1.4375em;
+  top: 1;
+  left: 0;
+  height: 40px;
+  width: 40px;
+  line-height: 2em;
+  text-align: center;
+  vertical-align: center;
+  font-weight: bold;
+  border-radius: 2em;
+}
+.container h3{
+color: black;
+font-weight: 400;
+}
+
+.btn-social{
+  background: #3f51b5;
+}
